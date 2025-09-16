@@ -16,7 +16,7 @@ ui <- fluidPage(
 )
 
 server <- function(input, output) {
-  cat("Adjective: ", input$adjective, "\n")
+  
   story <- eventReactive(input$go, {
     paste0(
       "Once upon a time, there was a ", input$adjective, " ", input$noun,
